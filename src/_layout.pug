@@ -14,17 +14,18 @@ html(lang="ja")
     //- link(rel="stylesheet" href="a.scss")
     //- link(rel="stylesheet" href="3b.scss")
   body
-    container(class=`${ page }`)
+    .container(class=`${ page }`)
       header
         a(href="#")
           img(src="img/sitelogo.svg", alt="TOP POINT")
 
       block content
+        p none
         //- include 3b.pug
         //- include a.pug
         
 
-      nav
+      nav.page-nav
         ul
           li: a(href="#") トップ
           li: a(href="#") 最新記事
@@ -32,7 +33,7 @@ html(lang="ja")
           li: a(href="#") お出かけシリーズ
           li: a(href="#") お問い合わせ
 
-      button(type="button").page-btn
+      button(type="button").page-btn-open
         span.fas.fa-bars(title="メニューを開く")
       
       button(type="button").page-btn-close
@@ -41,4 +42,4 @@ html(lang="ja")
       footer
         p © TOP POINT
 
-    //- script(src="main.js")
+    script(src="main.js")
