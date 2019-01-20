@@ -1,0 +1,43 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    title サンプル
+    meta(name="viewport" content="width=device-width")
+    script(defer="" src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet")
+
+    link(rel="stylesheet" href="style.scss")
+    //- link(rel="stylesheet" href="a.scss")
+    //- link(rel="stylesheet" href="3b.scss")
+  body
+    container(class=`${ page }`)
+    header
+      a(href="#")
+        img(src="img/sitelogo.svg", alt="TOP POINT")
+
+    block content
+      //- include 3b.pug
+      //- include a.pug
+      
+
+    nav
+      ul
+        li: a(href="#") トップ
+        li: a(href="#") 最新記事
+        li: a(href="#") お食事シリーズ
+        li: a(href="#") お出かけシリーズ
+        li: a(href="#") お問い合わせ
+
+    button(type="button").page-btn
+      span.fas.fa-bars(title="メニューを開く")
+    
+    button(type="button").page-btn-close
+      span.fas.fa-times(title="メニューを閉じる")
+
+    footer
+      p © TOP POINT
+
+    //- script(src="main.js")
