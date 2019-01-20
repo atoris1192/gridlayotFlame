@@ -82,3 +82,28 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+// pc
+@media (min-width: 1260px) {
+  .container {
+    grid-template-columns: 260px 1fr;
+  }
+  header {
+    grid-row: 1;
+  }
+  .page-main {
+    grid-column: 2;
+    grid-row: 1 / -1;
+  }
+  .page-nav {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .page-btn-open,
+  .page-btn-close {
+    display: none;
+  }
+  .page-nav {
+    display: block;
+  }
+}
