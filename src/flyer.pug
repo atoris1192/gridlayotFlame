@@ -1,0 +1,119 @@
+extends _layout
+block vars
+  - const title = 'flyer'
+  - const page = 'flyer'
+
+block content
+  article.post.page-main
+
+    header.post-head
+
+      h1.post-title おすすめ行楽グルメスポット
+
+      p.post-lead 
+        | これからの季節にオススメなグルメスポットの情報をお届けします。みんなでわいわい楽しむも良し、一人でのんびり楽しみに行くも良しなスポットが目白押し。営業時間が短いお店や、人気メニューはすぐになくなっちゃうお店もありますので、要チェックです。
+
+      .post-series
+        img(src="./img/food.svg", alt="")
+        | FOOD SERIES
+
+      time.post-date(date-time="2020-12-01")
+        | 2020-12-01
+
+      aside.post-bread
+        ol
+          li: a(href="#")  トップ
+          li: a(href="#")  グルメ
+          li: a(href="#")  関東エリア
+
+      aside.post-category
+        ul
+          li: a(href="#") グループ
+          li: a(href="#") おひとり様
+
+      aside.post-sns
+        ul
+          li: a(href="#")
+            span.fab.fa-twitter(title="Twitter")
+          li: a(href="#")
+            span.fab.fa-facebook(title="Facebook")
+          li: a(href="#")
+            span.fab.fa-google-plus-g(title="Google+")
+
+    section.sec.sec01
+      h2
+        span.spot SPOT
+        span.num 1.
+        | 新鮮採れたて野菜がおいしい
+        br
+        | ハンバーガー
+      figure
+        img(src="./img/food-burger.jpg", alt="") 
+      p
+        | 肉汁たっぷりなお肉と新鮮な野菜を一緒に楽しむなら、ここのハンバーガーが一押しです。トマトにレタス、キュウリ、玉ねぎ、アボガド、ピクルスなどなど、いろいろな野菜が用意されていて、好きなものを組み合わせてオリジナルのバーガーを作ることもできます。
+
+      .shop
+        h3 FLESHカフェ 恵比寿中央店
+        img(src="./img/shop01.jpg", alt="")
+        p 
+          | 〒123-456
+          br
+          | 東京都渋谷区恵比寿12-3中央ビル
+          br
+          | 03-0000-0000
+          span OPEN
+          | 11:00-22:00 [月曜定休]
+
+    section.sec.sec02
+      h2
+        span.spot SPOT
+        span.num 2.
+        | 甘い香りの
+        br
+        | オレンジピールクッキー
+      figure.fig01
+        img(src="./img/food-orange.jpg", alt="") 
+      figure.fig02
+        img(src="./img/food-cookie.jpg", alt="") 
+      p
+        | オレンジピールのちょっとほろ苦い甘さに誘われて、やめられなくなるクッキーです。オレンジピールだけを楽しむのもあり。甘いものが苦手な人にもおすすめできます。 
+
+      .shop
+        h3 クッキー専門店 オレンジ
+        img(src="./img/shop02.jpg", alt="")
+        p 
+          | 〒123-456
+          br
+          | 東京都渋谷区恵比寿12-3中央ビル
+          br
+          | 03-0000-0000
+          span OPEN
+          | 11:00-22:00 [月曜定休]
+
+    section.sec.sec03
+      h2
+        span.spot SPOT
+        span.num 3.
+        | ふわもち
+        br
+        | チョコカップケーキ
+      figure
+        img(src="./img/food-cake.jpg", alt="") 
+      p
+        | お餅のようなもっちりさと、ふわふわの柔らかさが楽しめるカップケーキです。カリッと食感のチョコチップがアクセントになっています。
+
+      .shop
+        h3 ショコラティエ
+        img(src="./img/shop03.jpg", alt="")
+        p 
+          | 〒123-456
+          br
+          | 東京都渋谷区恵比寿12-3中央ビル
+          br
+          | 03-0000-0000
+          span OPEN
+          | 11:00-22:00 [月曜定休]
+    
+    footer.post-foot
+      p FOOD SERIES
+        
