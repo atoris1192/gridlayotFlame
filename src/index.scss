@@ -165,3 +165,64 @@
     font-size: calc(16px + 4 * (100vw - 768px) / 232);
   }
 }
+@media (max-width: 767px) {
+  .post {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    row-gap: 20px;
+    padding: 20px;
+    font-size: 14.4px;
+    & > * ,
+    &::after {
+      grid-column: auto;
+      grid-row: auto;
+    }
+    &::after { // 画像
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: end;
+      margin-bottom: -20px;
+    }
+  }
+  .post-title {
+    grid-column: 1;
+    grid-row: 1;
+    word-break: keep-all; // wbr htmlと連動
+  }
+  .post-sub {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 24px;
+  }
+  .post-date {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+  }
+  .post-lead {
+    font-size: 16px;
+  }
+  .post-fig01 {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .post-catch {
+    margin-left: 0;
+    margin-top: -35px;
+    justify-self: end;
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 0 0 10px 10px rgba(255,255,255, 0.6);
+    border-radius: 10px;
+  }
+  .post-text01,
+  .post-text02 {
+    font-size: 15px;
+  }
+  .post-sns {
+    justify-self: center;
+    ul {
+      grid-auto-flow: column;
+      column-gap: 20px;
+    }
+  }
+}
