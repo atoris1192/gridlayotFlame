@@ -149,3 +149,19 @@
 
   }
 }
+
+// PC 1000px over
+
+@media (min-width: 1000px) {
+  .post {
+    width: 1000px; // 幅を固定
+    box-sizing: border-box;// 端の30px paddingを1000pxに含める
+    margin: auto; // 中央揃え
+    font-size: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 999px) {
+  .post { // font-size 16px ~ 20px 可変
+    font-size: calc(16px + 4 * (100vw - 768px) / 232);
+  }
+}
