@@ -1,5 +1,9 @@
 @charset "UTF-8"
 
+img {
+  width: 100%;
+  height: auto;
+}
 body {
   font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
   & * {
@@ -21,6 +25,7 @@ header {
 .page-btn-open.open {
   display: none;
 }
+
 
 
 // 外枠
@@ -88,7 +93,7 @@ footer {
   .container {
     grid-template-columns: 260px 1fr;
   }
-  .page-main {
+  .page-main { // 各コンテンツのルートに必要
     grid-column: 2;
     grid-row: 1 / -1;
   }

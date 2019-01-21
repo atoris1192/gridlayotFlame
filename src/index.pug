@@ -2,6 +2,52 @@ extends _layout
 block vars
   - const title = 'index'
   - const page = 'index'
+
 block content
-  div.page-main
-    p ddddddd
+  article.post.page-main
+
+    h1.post-title 夏の海の<wbr>アクティビティ
+    p.post-sub SUMMER ACTIVITY
+    time.post-date(datetime="2020-08-01")
+      span.far.fa-clock
+      |  2020-08-01
+    
+    p.post-lead おでかけ妄想シリーズ。今回は「夏の海のアクティビティ」というお題をいただきましたので、南国気分でお届けします。
+
+    figure.post-fig01
+      img(src="./img/ocean.jpg", alt="")
+
+    p.post-catch
+      | 青色に広がる海を眺めて
+      br
+      | のんびりまったりな幸せを満喫
+
+    .post-text01
+      p キラキラと光る青い海、ゆらゆらと浮かぶ小さな舟、どこまでも歩いていける白い砂浜。朝早く目覚めて波打ち際をちゃぷちゃぷ歩いていると、カラッとした空気にサラッとした風が気持ちよく感じます。ここはとある南の小さな島です。
+      p 海が広いのか、滞在者が少ないのか、人の姿もそれほど目につきません。満員電車のように人で溢れたどこかの海水浴場とは大違いです。海と砂浜と青い空を独り占めにして、のんびり景色を眺めたり、なんとなく波と戯れてみたり、木陰でお昼寝してみたり、読書して過ごしてみたり… なんて誰もが夢描いたことがありそうな南国リゾート的な時間の使い方もできてしまうところなのです。
+
+    fiure.post-fig02
+      img(src="./img/tree.jpg", alt="")
+      figcaption 
+        | サラサラの風に吹かれながら
+        br
+        | 木陰でお昼寝するのも気持ちいいです。
+        
+    .post-text02
+      p とはいえ、日頃から時間に追われる生活をしていると、いきなり「自由にのんびり過ごしていいよ～」と言われてもどうしたものか戸惑ってしまうもの。そんなときには、そこでしかできない「何か」に挑戦してみるのもおすすめです。
+      p リゾート地であれば、大なり小なり多彩なマリンアクティビティが楽しめます。シュノーケリング、アクアウォーク、パラセーリング、ジェットスキー、バナナボート、シーカヤック etc. 本格的なものから、泳ぐのが苦手な人でも楽しめるものまで、さまざまなプランが用意されていますので、検索するだけでも楽しいです。そして、検索結果で夢を大きくしていくのは自由です。
+      p 夢を大きくしすぎて日常に戻るのが嫌になったら、またここに遊びにきてください。きれいな写真を用意してお待ちしています。
+
+    aside.post-sns
+      ul
+        li: a(href="#")
+          span.fab.fa-twitter(title="Twitter")
+        li: a(href="#")
+          span.fab.fa-facebook(title="Facebook")
+        li: a(href="#")
+          span.fab.fa-google-plus-g(title="Google+")
+
+
+
+
+
