@@ -152,6 +152,28 @@
       content: url('./img/gourmet.svg');
     }
   }
+  .sec {
+    h2 {
+      font-family: 'Mplus 1p', sans-serif;
+      font-size: 21px;
+      font-weight: 700px;
+      line-height: 1.2;
+    }
+    .spot {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      border: solid 1px #aaaaaa;
+      border-radius: 50%;
+      
+    }
+    p {
+      font-size: 14px;
+      text-align: justify;
+      text-justify: inter-ideograph; //Edge用
+    }
+  }
   .sec01 {
     grid-column: 2 / -2;
     grid-row: 3;
@@ -171,6 +193,10 @@
     figure {
       grid-column: 1;
       grid-row: 1 / -1;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
     p {
       grid-column: 2;
@@ -195,10 +221,16 @@
     .fig01 {
       grid-column: 1;
       grid-row: 2 / 4;
+      margin-bottom: 40px;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .fig02 {
       grid-column: 2;
       grid-row: 3;
+      margin-left: -40px;
     }
     p {
       grid-column: 2;
@@ -223,6 +255,10 @@
     figure {
       grid-column: 1;
       grid-row: 1;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
     p {
       grid-column: 1;
