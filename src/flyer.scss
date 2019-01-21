@@ -31,14 +31,33 @@
     .post-title {
       grid-column: 2;
       grid-row: 3;
+      font-family: 'Mplus 1p', sans-serif;
+      font-size: 35px;
+      font-weight: 900;
+      line-height: 1.2;
     }
     .post-lead {
       grid-column: 2;
       grid-row: 4;
+      font-size: 13px;
+      line-height: 1.8;
     }
     .post-series {
       grid-column: 1;
       grid-row: 1 / 4;
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      text-align: center;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+
+      align-content: center; // strech -> center
+      row-gap: 8px;
+      margin-bottom: -12px; // lead文と揃えるため
     }
     .post-date {
       grid-column: 3;
@@ -47,14 +66,69 @@
     .post-bread {
       grid-column: 2;
       grid-row: 1;
+      align-self: end;
+      font-size: 10px;
+      line-height: 2;
+      li:not(:last-child)::after{
+        margin: 0 5px;
+        content: '>';
+        color: #aaaaaa;
+      }
     }
     .post-category {
       grid-column: 2;
       grid-row: 2;
+      ul {
+        column-gap: 5px;
+      }
+      a {
+        display: block;
+        padding: 3px 10px;
+        border-radius: 5px;
+        background-color: #cccccc;
+        font-size: 10px;
+      }
+    }
+    ol, ul { // bread, category , sns
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
     }
     .post-sns {
       grid-column: 3;
       grid-row: 3;
+      justify-self: center;
+      
+      ul {
+        column-gap: 5px;
+        // justify-content: space-between;
+      }
+      a {
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 5px;
+        display: block;
+        width: 40px;
+        height: 35px;
+        line-height: 35px;
+      }
+      li:nth-child(1) a {
+        background-color: #55acee;
+      }
+      li:nth-child(2) a {
+        background-color: #3b5998;
+      }
+      li:nth-child(3) a {
+        background-color: #dd4b39;
+      }
     }
   }
   .sec01 {
