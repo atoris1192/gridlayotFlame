@@ -1,0 +1,77 @@
+.flyer-post {
+  & * {
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+  .post-series img {
+    max-width: 30px;
+  }
+  .shop img {
+    max-width: 100px;
+  }
+  display: grid;
+  grid-template-columns: 20px 1fr 50px 1fr 20px;
+  grid-template-rows: auto 30px auto 40px auto 30px auto;
+
+  .post-head {
+    padding: 0;
+    background-color: #ffffff;
+    grid-column: 2 / -2;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 75px 1fr 140px;
+    grid-template-rows: 45px auto auto auto auto;
+    gap: 12px 24px;
+    
+    .post-title {
+      grid-column: 2;
+      grid-row: 3;
+    }
+    .post-lead {
+      grid-column: 2;
+      grid-row: 4;
+    }
+    .post-series {
+      grid-column: 1;
+      grid-row: 1 / 4;
+    }
+    .post-date {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .post-bread {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .post-category {
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .post-sns {
+      grid-column: 3;
+      grid-row: 3;
+    }
+  }
+  .sec01 {
+    grid-column: 2 / -2;
+    grid-row: 3;
+  }
+  .sec02 {
+    grid-column: 2;
+    grid-row: 5;
+  }
+  .sec03 {
+    grid-column: 4;
+    grid-row: 5;
+  }
+  footer {
+    grid-column: 1 / -1;
+    grid-row: -1;
+  }
+
+}
