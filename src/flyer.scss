@@ -1,4 +1,5 @@
 .flyer-post {
+  --side: 20px;
   & * {
     margin: 0;
   }
@@ -14,7 +15,7 @@
     max-width: 100px;
   }
   display: grid;
-  grid-template-columns: 20px 1fr 50px 1fr 20px;
+  grid-template-columns: var(--side) 1fr 50px 1fr var(--side);
   grid-template-rows: auto 30px auto 40px auto 30px auto;
 
   .post-head {
@@ -129,6 +130,26 @@
       li:nth-child(3) a {
         background-color: #dd4b39;
       }
+    }
+    &::before { // パンくずリスト下の区切り線
+      grid-column:  1 / -1;
+      grid-row: 1;
+      align-self: end;
+      content: '';
+      border-top: solid 4px #222222;
+      height: 2px;
+      border-bottom: solid 2px #222222;
+      // margin: 0 -20px;
+      // margin: 0 calc(var(--side) * -1);
+      margin-bottom: -4px;
+    }
+    &::after {
+      grid-column: 3;
+      grid-row: 4;
+      justify-self: center;
+      align-self: center;
+      width: 80%;
+      content: url('./img/gourmet.svg');
     }
   }
   .sec01 {
